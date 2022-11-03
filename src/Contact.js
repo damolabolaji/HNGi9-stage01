@@ -35,11 +35,12 @@ const Contact = () => {
 
         <div className="flex-col-full">
           <label for="message">Message</label>
-          <textarea type="text" id="message" placeholder="Send me a message and I'll reply you as soon as possible..."/>
+          <textarea type="text" id="message" name="message-body" placeholder="Send me a message and I'll reply you as soon as possible..."/>
         </div>
 
         <div>
-            <input className="chkbox" type="checkbox" id="checkbox" value="Submit"/>
+            <input type="checkbox" id="checkbox" value="Submit"/>
+            {/* <span className="chkbox">ujkijhg</span> */}
             <label for="checkbox">You agree to providing your data to (name) who may contact you.</label>
         </div>
  
