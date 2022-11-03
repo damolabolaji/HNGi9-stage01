@@ -208,11 +208,12 @@
 
 .contactForm h1 {
   padding-bottom: 20px;
+  color: #101828;
 }
 
 .contactForm p{
   font-size: 20px;
- 
+  color: #475467;
 }
 
 #my-form {
@@ -233,7 +234,6 @@
   
 }
 
-
 .flex-col-full {
   margin: 24px 0;
   display: flex;
@@ -250,8 +250,7 @@
 }
 
 label:last-child {
-  padding-left: 20px;
-  color: #344054;
+
 }
 
 #my-form input, textarea {
@@ -259,7 +258,7 @@ label:last-child {
   outline: none;
   border: 1px solid #99a3b5;
   border-radius: 8px;
-  margin: 5px 0;
+  margin: 10px 0;
 }
 textarea {
   height: 132px;
@@ -267,13 +266,57 @@ textarea {
   overflow: auto;
 }
 
-/* input[type = checkbox] {
-  display: none;
+.chk-container {
+  display: block;
+  position: relative;
+  padding-left: 33px;
+  color: #475467;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
-.chkbox {
 
+.chk-container input {
+  opacity: 0;
+  position: absolute;
+  top: 0%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.chkbox {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
   border: 1px solid #99a3b5;
-} */
+  border-radius: 6px;
+}
+
+.chk-container input:checked ~ .chkbox {
+  border: 2px solid #1570EF;
+}
+
+.chkbox::after {
+  content: '';
+  position: absolute;
+  left: 4px;
+  height: 10px;
+  width: 5px;
+  border: solid #1570EF;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+  border-radius: 2px;
+  display: none;
+
+}
+
+.chk-container input:checked ~ .chkbox::after {
+display: block;
+}
 
 
 #my-form button {

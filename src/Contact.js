@@ -39,9 +39,12 @@ const Contact = () => {
         </div>
 
         <div>
-            <input type="checkbox" id="checkbox" value="Submit"/>
-            {/* <span className="chkbox">ujkijhg</span> */}
-            <label for="checkbox">You agree to providing your data to (name) who may contact you.</label>
+            
+          <label for="checkbox" className="chk-container">You agree to providing your data to (name) who may contact you.
+            <input type="checkbox" id="checkbox"/>
+            <span className="chkbox"></span>
+                     
+          </label>
         </div>
  
         <button id="btn__submit">Send message</button>
