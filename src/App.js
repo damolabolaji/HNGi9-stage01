@@ -1,10 +1,12 @@
 
 
 
-import Header from './Header';
-import MenuLinks from './MenuLinks';
+import Home from './Home';
 import Footer from './Footer';
-import SocialLinks from './SocialLinks';
+
+
+
+import { Route, Routes } from 'react-router-dom'
 
 
 
@@ -13,12 +15,14 @@ function App() {
   return (
     <div className="App">
       <div className="content">
-        <div className="MainContent">
-        <Header />
-        <MenuLinks />
-        <SocialLinks />
+        {/* <Routes>
+            <Route />
+        </Routes> */}
+
+        <Home/>
+
         <Footer />
-        </div>
+        
        
 
         
