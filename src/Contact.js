@@ -13,7 +13,7 @@ const Contact = () => {
        
 
         {/* <div id="msg"></div> */}
-        <div className="name">
+        <div id="name">
 
             <div>
                 <label for="first_name">First name</label>
@@ -27,13 +27,13 @@ const Contact = () => {
 
         </div>
        
-
-        <div>
+      
+        <div className="flex-col-full">
           <label for="email">Email</label>
           <input type="text" id="email" placeholder="yourname@email.com"/>
         </div>
 
-        <div>
+        <div className="flex-col-full">
           <label for="message">Message</label>
           <textarea type="text" id="message" placeholder="Send me a message and I'll reply you as soon as possible..."/>
         </div>

@@ -197,6 +197,67 @@
 }
 
 
+/* -------Contact Page-------- */
+
+.contactForm{
+  width: 720px;
+  margin: 0 auto;
+  padding-top: 160px;
+  background-color: #D0D5DD;
+}
+
+.contactForm h1 {
+  padding-bottom: 14px;
+}
+
+.contactForm p{
+  font-size: 20px;
+ 
+}
+
+#my-form {
+  margin-top: 60px;
+}
+
+#name {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#name div {
+ width: 48%;
+  display: flex;
+  flex-direction: column;
+  
+  
+}
+
+
+
+.flex-col-full {
+  margin: 24px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+::placeholder {
+  font-size: 16px;
+}
+
+
+
+#my-form button {
+  margin: 24px 0;
+  width: 100%;
+
+}
+
+
+
+/* #message, #email */
+
+
 
 
 
