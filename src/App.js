@@ -3,6 +3,7 @@
 
 import Home from './Home';
 import Footer from './Footer';
+import Contact from './Contact'
 
 
 
@@ -16,10 +17,12 @@ function App() {
     <div className="App">
       <div className="content">
         {/* <Routes>
-            <Route />
+            <Route path='/' element= {<Home/>} />
         </Routes> */}
 
         <Home/>
+
+        <Contact/>
 
         <Footer />
         
