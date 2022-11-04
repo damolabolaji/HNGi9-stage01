@@ -1,4 +1,8 @@
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
+
+import Home from './Home';
 
 const name = 'Damola Bolaji';
 
@@ -75,7 +79,13 @@ const Contact = () => {
 
         <div className="contactForm">
 
-            <button><span> &larr;</span> Back </button>
+        <Routes>
+            <Route path='/home' element= {<Home/>} />
+           
+        </Routes>
+
+            <Link to="/"><button className='back-button'><span> &larr;</span> Home </button></Link>
+           
 
             {/* <div className="container">
                 {Object.keys(formErrors).length === 0 && isSubmit ? (<div className="form-success">Signed in successfully</div>) : null } 
