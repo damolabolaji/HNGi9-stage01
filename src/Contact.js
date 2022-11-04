@@ -83,13 +83,13 @@ const Contact = () => {
 
             <div>
                 <label for="first_name">First name</label>
-                <input type="text" name='firstname' id="first_name" placeholder="Enter your first name" value={ formValues.firstname } onChange= {handleChange}/>
+                <input type="text" name='firstname' className={(formErrors.firstname) ? "error-two" :""} id="first_name" placeholder="Enter your first name" value={ formValues.firstname } onChange= {handleChange}/>
                 <small className="err-msg">{formErrors.firstname}</small>
             </div>
 
             <div>
                 <label for="last_name">Last name</label>
-                <input type="text" name='lastname' id="last_name" placeholder="Enter your last name" value={ formValues.lastname } onChange= {handleChange}/>
+                <input type="text" name='lastname'   className={(formErrors.lastname) ? "error-two" :""} id="last_name" placeholder="Enter your last name" value={ formValues.lastname } onChange= {handleChange}/>
                 <small className="err-msg">{formErrors.lastname}</small>
             </div>
 
@@ -98,7 +98,7 @@ const Contact = () => {
       
         <div className="flex-col-full">
           <label for="email">Email</label>
-          <input type="text" name='email' className="error" id="email" placeholder="yourname@email.com" value={ formValues.email } onChange= {handleChange} />
+          <input type="text" name='email' className={(formErrors.email) ? "error-two" :""} id="email" placeholder="yourname@email.com" value={ formValues.email } onChange= {handleChange} />
           <small className="err-msg">{formErrors.email}</small>
         </div>
 
