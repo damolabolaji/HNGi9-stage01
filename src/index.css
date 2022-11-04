@@ -203,7 +203,7 @@
   width: 720px;
   margin: 0 auto;
   padding: 160px 0;
-  /* background-color: #D0D5DD; */
+ 
 }
 
 .contactForm h1 {
@@ -227,9 +227,10 @@
 }
 
 #name div {
- width: 48%;
+  width: 48%;
   display: flex;
   flex-direction: column;
+  padding-bottom: 10px;
   
   
 }
@@ -238,6 +239,7 @@
   margin: 24px 0;
   display: flex;
   flex-direction: column;
+  padding-bottom: 10px;
 }
 
 ::placeholder {
@@ -249,9 +251,6 @@
   font-weight: 500;
 }
 
-label:last-child {
-
-}
 
 #my-form input, textarea {
   padding: 16px 14px 14px;
@@ -259,11 +258,23 @@ label:last-child {
   border: 1px solid #99a3b5;
   border-radius: 8px;
   margin: 10px 0;
+  box-shadow: 0 1px 2px #10182820;
 }
+
 textarea {
   height: 132px;
   resize: none;
   overflow: auto;
+}
+
+
+#my-form input:focus {
+  border: 1px solid #1570EF;
+}
+
+
+#my-form textarea:focus {
+  box-shadow: 0 0 0 5px rgb(178, 221, 255);
 }
 
 .chk-container {
@@ -332,7 +343,25 @@ display: block;
 
 
 
-/* #message, #email */
+/* form validation */
+small {
+  font-size: 14px;
+  color: #F83F23;
+}
+
+.error {
+  border: 1px solid #F83F23;
+  box-shadow: 0 0 0 5px #f3dad6
+}
+
+/* input#last_name {
+  border: 1px solid #F83F23;
+} */
+
+
+
+
+
 
 
 
