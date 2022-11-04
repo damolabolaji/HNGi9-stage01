@@ -342,6 +342,16 @@ display: block;
 }
 
 
+/* form validation */
+small {
+  font-size: 14px;
+  color: #F83F23;
+}
+
+.error {
+  border: 1px solid #F83F23;
+  box-shadow: 0 0 0 5px #f3dad6
+}
 
 
 
