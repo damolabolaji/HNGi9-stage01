@@ -20,13 +20,14 @@ function App() {
   return (
     <div className="App">
       <div className="content">
-        {/* <Routes>
+        <Routes>
             <Route path='/' element= {<Home/>} />
-        </Routes> */}
+            <Route path='/contact' element= {<Contact/>} />
+        </Routes>
 
-        <Home/>
+        {/* <Home/>
 
-        <Contact/>
+        <Contact/> */}
 
         <Footer />
         

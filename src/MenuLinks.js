@@ -1,4 +1,4 @@
-
+import { Link } from 'react-router-dom'
 
 
 const MenuLinks = () => {
@@ -11,6 +11,7 @@ const MenuLinks = () => {
             <a href="https://books.zuri.team/python-for-beginners?ref_id=damolabolaji" target="_blank" title="The best Python books for a quality price. This is an affiliate link." id="book__python">Python Books</a>
             <a href="https://background.zuri.team"  target="_blank"  title="Hiring remote workers? No problem. We offer background checks services for all hires on your behalf." id="pitch">Background Check for Coders</a>
             <a href="https://books.zuri.team/design-rules" target="_blank" title="Click here to get a free dowmload of Zuri's design book" id="book__design">Design Books</a>
+            <Link id='contact' to="/contact">Contact Me</Link>     
         </div>
 
     );

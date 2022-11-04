@@ -328,6 +328,7 @@ display: block;
 }
 
 
+
 /* form validation */
 small {
   font-size: 14px;
@@ -341,6 +342,14 @@ small {
 
 .error-two{
   border: 1px solid #F83F23;
+}
+
+.form-success {
+  width: 150px;
+  height: 20px;
+  background-color: white;
+  border: 1px solid #1570EF;
+  margin: 0 auto;
 }
 
 
@@ -377,7 +386,7 @@ width: 150px;
   /* -------contact form-------- */
 
   .contactForm{
-    padding: 0 32px;
+    padding: 60px 32px 80px;
     margin: auto;
     min-width: 320px;
   }

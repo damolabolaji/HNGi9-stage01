@@ -75,6 +75,12 @@ const Contact = () => {
 
         <div className="contactForm">
 
+            <button><span> &larr;</span> Back </button>
+
+            {/* <div className="container">
+                {Object.keys(formErrors).length === 0 && isSubmit ? (<div className="form-success">Signed in successfully</div>) : null } 
+            </div> */}
+
         <h1>Contact Me</h1>
         <p>Hi there, contact me to ask me about anything you have in mind.</p>
       <form id="my-form" onSubmit={handleSubmit}>
