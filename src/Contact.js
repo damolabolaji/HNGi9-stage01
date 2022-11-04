@@ -13,20 +13,14 @@ const Contact = () => {
     const [formErrors, setformErrors] = useState({});
     const [isSubmit, setisSubmit] = useState(false)
    
-    
-    // const [first_name, setFirstName] = useState("") 
-    // const [Error, setError] = useState(false)
-    
-
-    // const helper = (e) => {e.preventDefault(); first_name===""? setError(true) : setError(false)};
-
+ 
 
      const handleChange = (e) => {
      
       const { name, value} = e.target;
       setformValues({...formValues, [name]: value});
       console.log(formValues);
-    //   helper(formValues.message)
+  
 
       
 
