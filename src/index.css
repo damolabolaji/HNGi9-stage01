@@ -9,7 +9,7 @@
 
 .content {
   max-width: 1440px;
-  /* width: 100%; */
+  min-width: 320px;
   margin: auto;
   
 }
@@ -200,7 +200,7 @@
 /* -------Contact Page-------- */
 
 .contactForm{
-  width: 720px;
+  max-width: 720px;
   margin: 0 auto;
   padding: 160px 0;
  
@@ -385,5 +385,40 @@ width: 150px;
   .footer h6 {
     width: 100%;
     margin: 20px 0;
+  }
+
+
+  /* -------contact form-------- */
+
+  .contactForm{
+    padding: 0 32px;
+    margin: auto;
+    min-width: 320px;
+  }
+
+  #my-form {
+    margin-top: 60px;
+  }
+  
+  #name {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #name div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    
+    
+  }
+  
+  .flex-col-full {
+    margin: 24px 0;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
   }
 }
