@@ -343,6 +343,7 @@ button {
 }
 #my-form button:disabled {
   background-color: #B2DDFF;
+  border: none;
 }
 
 .back-button {

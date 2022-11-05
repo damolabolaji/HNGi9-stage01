@@ -15,8 +15,12 @@ const Contact = () => {
     const initialValues = { firstname: '', lastname: '', email: '', message: '' }
     const [formValues, setformValues] = useState(initialValues);
     const [formErrors, setformErrors] = useState({});
-    const [isSubmit, setisSubmit] = useState(false)
+    const [isSubmit, setisSubmit] = useState(false);
+    const [change, setChange] = useState(true)
    
+    const buttonChange = (e) => {
+      setChange(!change)
+    }
  
 
      const handleChange = (e) => {
@@ -25,8 +29,6 @@ const Contact = () => {
       setformValues({...formValues, [name]: value});
       console.log(formValues);
   
-
-      
 
     }
 
@@ -127,13 +129,13 @@ const Contact = () => {
         <div>
             
           <label for="checkbox" className="chk-container">You agree to providing your data to {name} who may contact you.
-            <input type="checkbox" id="checkbox"/>
+            <input type="checkbox" id="checkbox" onChange={buttonChange}/>
             <span className="chkbox"></span>
                      
           </label>
         </div>
  
-        <button id="btn__submit">Send message</button>
+        <button id="btn__submit" disabled={change} >Send message</button>
 
       </form>
 
